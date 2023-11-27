@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+	background: url("../bg.avif");
+	min-height: 100vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#board {
+	backdrop-filter: blur(50px);
+	border: none;
+	border-radius: 20px;
+	width: 90vh;
+	height: 90vh;
+	box-shadow: 0 0 15px rgba(232, 251, 164, 0.553);
+	display: grid;
+	grid-template-rows: repeat(18, 1fr);
+	grid-template-columns: repeat(18, 1fr);
+}
+
+#scoreBox {
+	position: absolute;
+	top: 20px;
+	right: 35px;
+	color: antiquewhite;
+	font-size: 50px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@keyframes fruit {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+    100%{
+        transform: scale(1);
+    }
+}
+
+.food {
+	background: linear-gradient(45deg, yellow, red);
+	border-radius: 50%;
+	box-shadow: 0 0 17px yellow;
+    animation: fruit linear 0.4s;
+}
+
+.snake {
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px black;
+	transform: scale(1.2);
+	border-left: solid 2px rgb(255, 255, 255);
+	border-right: solid 2px rgb(255, 255, 255);
+}
+
+.head {
+	background-color: rgb(0, 0, 0);
+	border: solid 3px rgb(255, 255, 255);
+	border-radius: 10px;
+	transform: scale(1.4);
+	position: relative;
+}
+
+.head::after {
+	content: "";
+	height: 10px;
+	width: 10px;
+	background: white;
+	position: absolute;
+	top: 10px;
+	left: 3px;
+	border-radius: 50%;
+}
+.head::before {
+	content: "";
+	height: 10px;
+	width: 10px;
+	background: white;
+	position: absolute;
+	top: 10px;
+	right: 3px;
+	border-radius: 50%;
+}
