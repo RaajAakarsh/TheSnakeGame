@@ -16,7 +16,7 @@ Features:
 
 How to Play:
 
-    Visit the website link.
+    Fork the Project and then run the index.html file in a live server.
     Use arrow keys to control the snake's direction.
     Collect food items to grow the snake and earn points.
     Avoid collisions with the snake's own body and the game borders.
@@ -24,7 +24,6 @@ How to Play:
 Technologies Used:
 
     Frontend: HTML, CSS, JavaScript
-    Scoring: Local Storage
     Version Control: Git, GitHub
 
 Feel free to fork, contribute, or open issues. Have fun playing!
