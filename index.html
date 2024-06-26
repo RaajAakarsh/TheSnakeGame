@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SnakeMania</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="body">
-        <div id="scoreBox">Score: 0</div>
-        <div id="board"></div>
-    </div>
-    <div class="footer">
-        This platform has been design by <b>Aakarsh Raaj</b>
-    </div>
-</body>
-<script src="js/index.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SnakeMania</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="body">
+			<div class="welcome">SnakeMania</div>
+			<div class="rules">
+				1. Use the arrow keys (Up, Down, Left, Right) to control the movement of
+				the snake. <br />
+				2. Eat the food (displayed as a dot) to grow longer.<br />
+				3. Avoid colliding with the walls or the snake's own body.<br />
+				4. Press 'M' to toggle the background music on or off.<br />
+				5. Each food eaten increases your score.<br />
+				6. Try to beat the high score possible by surviving as long as you can
+				without colliding.
+			</div>
+			<div id="Hi_scoreBox" class="hidden style"></div>
+			<div id="scoreBox" class="style">Score: 0</div>
+			<div id="board"></div>
+		</div>
+		<div class="footer">
+			This platform has been design by <b>Aakarsh Raaj</b>
+		</div>
+	</body>
+	<script src="js/index.js"></script>
 </html>
