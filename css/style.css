@@ -48,14 +48,14 @@
 }
 
 .rules{
-	border: solid yellow 2px ;
+	border: none;
 	color: cyan;
-	width: 200px;
+	width: 250px;
 	font-style: oblique;
 	position: absolute;
 	bottom: 55px;
 	left: 15px;
-	padding: 15px;
+	padding: 20px;
 	text-align: justify;
 }
 
